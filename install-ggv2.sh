@@ -13,4 +13,5 @@ cd /home/ec2-user
 wget $url
 unzip $nucleus -d $dir
 
+echo $name
 java -Droot="/greengrass/v2" -Dlog.store=FILE -jar ./$dir/lib/Greengrass.jar --thing-name $name --component-default-user ggc_user:ggc_group --provision true --setup-system-service true --deploy-dev-tools true
