@@ -1,3 +1,5 @@
+#!/bin/bash
+
 script=https://raw.githubusercontent.com/iizus/ec2-launch-template/main/get-instance-id.sh
 id=`curl -s $script | bash`
 
