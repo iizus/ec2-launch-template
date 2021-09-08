@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo yum upgrade -y
 sudo yum install -y tree jq
 
