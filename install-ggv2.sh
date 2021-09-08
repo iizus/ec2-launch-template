@@ -9,6 +9,7 @@ nucleus=greengrass-nucleus-latest.zip
 dir=GreengrassCore
 url=https://d2s8p88vqu9w66.cloudfront.net/releases/$nucleus
 
+cd ~
 wget $url
 unzip $nucleus -d $dir
 
