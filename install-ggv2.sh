@@ -1,9 +1,10 @@
 #!/bin/bash
 
-script=https://raw.githubusercontent.com/iizus/ec2-launch-template/main/main.sh
+script=https://raw.githubusercontent.com/iizus/ec2-launch-template/main/set-date-to-instance-name.sh
 name=$(curl -s ${script} | bash)
 
-yum install -y java-11-amazon-corretto-headless
+yum upgrade -y
+yum install -y tree jq java-11-amazon-corretto-headless
 
 nucleus=greengrass-nucleus-latest.zip
 dir=GreengrassCore
