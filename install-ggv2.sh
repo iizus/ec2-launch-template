@@ -5,7 +5,6 @@ name=`curl -s $script | bash`
 
 yum install -y java-11-amazon-corretto-headless
 
-cd ~
 nucleus=greengrass-nucleus-latest.zip
 url=https://d2s8p88vqu9w66.cloudfront.net/releases/$nucleus
 wget $url
