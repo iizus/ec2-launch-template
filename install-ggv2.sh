@@ -21,7 +21,6 @@ java -Droot="/greengrass/v2" -Dlog.store=FILE -jar ${JAR} \
   --thing-group-name Greengrass_v2 \
   --component-default-user ggc_user:ggc_group \
   --provision true \
-  --start true \
   --setup-system-service true \
   --deploy-dev-tools true \
   --tes-role-name GreengrassV2TokenExchangeRole \
