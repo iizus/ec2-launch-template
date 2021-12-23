@@ -15,8 +15,13 @@ wget ${url}
 unzip ${nucleus} -d ${dir}
 
 JAR=./${dir}/lib/Greengrass.jar
-java -Droot="/greengrass/v2" -Dlog.store=FILE -jar ${JAR} \
+
+java \
+  -Droot="/greengrass/v2" \
+  -Dlog.store=FILE -jar ${JAR} \
   --thing-name ${name} \
+  --thing-policy-name Full-Access-Policy \
+  --thing-group-name Greengrass_v2 \
   --component-default-user ggc_user:ggc_group \
   --provision true \
   --setup-system-service true \
